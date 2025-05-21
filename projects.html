@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inter'>
+</head>
+<body class="gradient" style="min-height:100vh; width: 100%">
+<div id="nav" onclick="location.href='index.html'"><span id="home">bea.nsprout</span> > Projects</div>
+
+<main>
+
+  <section id="sokoban-solver-bot">
+    <h2>Sokoban Solver Bot</h2>
+
+    <p>
+      A solver bot for a puzzle-based video game caled sokoban.
+    </p>
+
+    <img id="sokobot-poster" src="img/CSINTSY%20Poster.png" alt="sokobot-poster.png" style="display:none;">
+    <button id="sokobot-toggle" class="toggle" onclick="toggle()" style="font-size:1em">▼</button>
+  </section>
+
+  <section id="warehouse-logistics">
+    <h2>Warehouse Logistics Web Application </h2>
+    <p>Member of a team of 4 which developed a warehouse logistics system database application based on a company's specifications</p>
+    <img id="warehouse" src="img/CCINFOMWarehouse.png" alt="CCINFOMWarehouse.png" style="display:none;">
+    <button id="warehouse-toggle" class="toggle" onclick="toggle_warehouse()" style="font-size:1em">▼</button>
+  </section>
+
+  <section id="filipino-grammar-checker">
+    <h2>Filipino Grammar Checker </h2>
+    <p>Member of a team of 3 which developed a checker for a few selected common grammatical errors in the Filipino language</p>
+    <img id="langtool" src="img/LanguageTool.png" alt="LanguageTool.png" style="display:none;">
+    <button id="langtool-toggle" class="toggle" onclick="toggle_langtool()" style="font-size:1em">▼</button>
+  </section>
+
+  <section id="hotel-reservation">
+    <h2>Hotel Reservation System </h2>
+    <p>Member of a team of 2 which developed a reservation management system using Java and Java Swing</p>
+    <img id="hotel" src="img/CCPROG3Hotel.jpg" alt="CCPROG3Hotel.png" style="display:none;">
+    <button id="hotel-toggle" class="toggle" onclick="toggle_hotel()" style="font-size:1em">▼</button>
+  </section>
+
+
+
+
+</main>
+
+<script>
+  function toggle_langtool() {
+    let poster = document.getElementById("langtool");
+    let button = document.getElementById("langtool-toggle");
+
+    if (poster.style.display === "none") {
+      poster.style.display = "block"; // Show poster
+      button.innerHTML = "▲"; // Change button to arrow up
+    } else {
+      poster.style.display = "none"; // Hide poster
+      button.innerHTML = "▼"; // Change button to arrow down
+    }
+  }
+
+  function toggle_hotel() {
+    let poster = document.getElementById("hotel");
+    let button = document.getElementById("hotel-toggle");
+
+    if (poster.style.display === "none") {
+      poster.style.display = "block"; // Show poster
+      button.innerHTML = "▲"; // Change button to arrow up
+    } else {
+      poster.style.display = "none"; // Hide poster
+      button.innerHTML = "▼"; // Change button to arrow down
+    }
+  }
+
+  function toggle_warehouse() {
+    let poster = document.getElementById("warehouse");
+    let button = document.getElementById("warehouse-toggle");
+
+    if (poster.style.display === "none") {
+      poster.style.display = "block"; // Show poster
+      button.innerHTML = "▲"; // Change button to arrow up
+    } else {
+      poster.style.display = "none"; // Hide poster
+      button.innerHTML = "▼"; // Change button to arrow down
+    }
+  }
+
+
+  function toggle() {
+    let poster = document.getElementById("sokobot-poster");
+    let button = document.getElementById("sokobot-toggle");
+
+    if (poster.style.display === "none") {
+      poster.style.display = "block"; // Show poster
+      button.innerHTML = "▲"; // Change button to arrow up
+    } else {
+      poster.style.display = "none"; // Hide poster
+      button.innerHTML = "▼"; // Change button to arrow down
+    }
+  }
+</script>
+</body>
+</html>
