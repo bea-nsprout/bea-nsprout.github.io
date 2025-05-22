@@ -91,6 +91,7 @@ img {
     black 100%);
     margin: -10px;
     height: 100vh;
+    transition: all 0.3s ease-out;
 }
 
 .button-list button {
