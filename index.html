@@ -7,7 +7,9 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inter'>
 </head>
 <body class="gradient" style="min-height:100vh; width: 100%">
-<div id="nav" onclick="location.href='index.html'"><span id="home">bea.nsprout</span></div>
+<div class="tint" style="padding:0">
+
+  <div id="nav" onclick="location.href='index.html'"><span id="home">bea.nsprout</span></div>
 
   <main style="text-align: right;">
     <div style="text-align: right;">
@@ -28,5 +30,53 @@
 
 
   </main>
+
+</div>
+
+<script>
+  document.getElementById("about").addEventListener("mouseover", function() {
+    document.querySelector(".tint").style.background = "rgb(0,0,255,0.2)";
+    document.querySelectorAll(".button-list button").forEach(button => {
+      button.style.boxShadow = "12px 12px cornflowerblue";
+    });
+    document.querySelector("#about").style.boxShadow = "none";
+  });
+  document.getElementById("about").addEventListener("mouseout", function() {
+    document.querySelector(".tint").style.background = ""; // Reset color
+    document.querySelectorAll(".button-list button").forEach(button => {
+      button.style.boxShadow = "";
+    });
+  });
+
+  document.getElementById("skills").addEventListener("mouseover", function() {
+    document.querySelector(".tint").style.background = "rgb(0,255,0,0.2)";
+    document.querySelectorAll(".button-list button").forEach(button => {
+      button.style.boxShadow = "12px 12px darkseagreen";
+    });
+    document.querySelector("#skills").style.boxShadow = "none";
+  });
+  document.getElementById("skills").addEventListener("mouseout", function() {
+    document.querySelector(".tint").style.background = ""; // Reset color
+    document.querySelectorAll(".button-list button").forEach(button => {
+      button.style.boxShadow = "";
+    });
+  });
+
+  document.getElementById("projects").addEventListener("mouseover", function() {
+    document.querySelector(".tint").style.background = "rgb(255,0,0,0.2)";
+    document.querySelectorAll(".button-list button").forEach(button => {
+      button.style.boxShadow = "12px 12px darkred";
+    });
+    document.querySelector("#projects").style.boxShadow = "none";
+  });
+  document.getElementById("projects").addEventListener("mouseout", function() {
+    document.querySelector(".tint").style.background = ""; // Reset color
+    document.querySelectorAll(".button-list button").forEach(button => {
+      button.style.boxShadow = "";
+    });
+  });
+
+
+</script>
 </body>
 </html>
