@@ -78,6 +78,12 @@ img {
     width: 70%;
 }
 
+.logo {
+    width: 1em;
+    height: 1em;
+    object-fit: scale-down;
+}
+
 .toggle {
     background: none;
     box-shadow: none;
@@ -96,4 +102,8 @@ img {
 
 .button-list button {
     transition: box-shadow 0.3s ease-out;
+}
+
+ul {
+    list-style-type: none;
 }
